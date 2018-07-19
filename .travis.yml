@@ -7,8 +7,6 @@ git:
   submodules: false
 cache:
   yarn: true
-  directories:
-    - .git/modules
 
 install:
   - yarn
