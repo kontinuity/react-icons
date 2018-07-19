@@ -9,6 +9,7 @@ cache:
   yarn: true
 
 install:
+  - git submodule init
   - (ls .git/ || echo 0)
   - (ls .git/modules/ || echo 0)
   - git config --local -l
