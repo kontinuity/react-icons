@@ -145,6 +145,12 @@ async function writeIconModule(icon) {
     const svgStr = await promisify(fs.readFile)(file, "utf8");
     const iconData = await convertIconData(svgStr);
 
+    console.log(
+      "#name ",
+      file,
+      path.extname(file),
+      path.basename(file, path.extname(file))
+    );
     const rawName = path.basename(file, path.extname(file));
     const pascalName = camelcase(rawName, { pascalCase: true });
     const name = (icon.formatter && icon.formatter(pascalName)) || pascalName;
