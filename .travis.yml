@@ -9,8 +9,11 @@ cache:
   yarn: true
 
 install:
-  - yarn
+  - (ls .git/ || echo 0)
+  - (ls .git/modules/ || echo 0)
+  - git config --local -l
   - yarn submodule
+  - yarn
 jobs:
   include:
     - stage: build packages
