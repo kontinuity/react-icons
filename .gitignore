@@ -4,3 +4,5 @@ lib
 module
 *.log
 *.tgz
+.DS_Store
+packages/react-icons/src/icons

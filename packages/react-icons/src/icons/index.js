@@ -171,6 +171,22 @@ module.exports = {
       projectUrl: "https://game-icons.net/",
       license: "CC BY 3.0",
       licenseUrl: "https://creativecommons.org/licenses/by/3.0/"
+    },
+    {
+      id: "ui",
+      name: "Unicon",
+      contents: [
+        {
+          files: path.resolve(
+            __dirname,
+            "unicons/svg/*.svg"
+          ),
+          formatter: name => `Ui${name}`
+        }
+      ],
+      projectUrl: "https://github.com/Iconscout/unicons",
+      license: "Apache License Version 2.0",
+      licenseUrl: "https://github.com/Iconscout/unicons/blob/master/LICENSE"
     }
   ]
 };
