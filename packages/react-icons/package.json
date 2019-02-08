@@ -1,17 +1,18 @@
 {
-  "name": "react-icons",
+  "name": "extended-react-icons",
   "version": "3.3.0",
   "description": "SVG React icons of popular icon packs using ES6 imports",
   "author": "Goran Gajic",
   "contributors": [
-    "kamijin_fanta <kamijin@live.jp>"
+    "kamijin_fanta <kamijin@live.jp>",
+    "kontinuity <npm@arif.co>"
   ],
   "license": "MIT",
   "main": "lib/index",
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:react-icons/react-icons.git"
+    "url": "git+ssh://git@github.com/react-icons/react-icons.git"
   },
   "bugs": {
     "url": "https://github.com/react-icons/react-icons/issues"
@@ -50,5 +51,9 @@
     "build-mjs": "node ../../node_modules/typescript/bin/tsc && node ../../node_modules/renamer/bin/cli.js --find js --replace mjs ./lib/* && node ../../node_modules/@babel/cli/bin/babel.js ./lib -x .mjs --keep-file-extension -d ./lib",
     "build-cjs": "node ../../node_modules/typescript/bin/tsc -p ./tsconfig.commonjs.json"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": []
 }
